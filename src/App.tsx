@@ -12,7 +12,6 @@ export function App() {
       <Button variant="success" />
       <Button variant="danger" />
       <Button />
-
       <GlobalStyle />
     </ThemeProvider>
   );
