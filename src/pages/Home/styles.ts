@@ -36,10 +36,22 @@ const BaseInput = styled.input`
   font-size: 1.125rem;
   padding: 0 0.5rem;
   color: ${(props) => props.theme["gray-100"]};
+
+  &:focus {
+    box-sizing: none;
+    border-color: ${(props) => props.theme["gray-500"]};
+  }
+
+  &::placeholder {
+    color: ${(props) => props.theme["gray-500"]};
+  }
 `;
 
 export const TaskInput = styled(BaseInput)`
   flex: 1;
+  &::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
 `;
 
 export const MinutsAmountInput = styled(BaseInput)`
