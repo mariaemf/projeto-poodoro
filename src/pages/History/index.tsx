@@ -1,5 +1,4 @@
-import { Header } from "../../assets/Header.";
-import { HistoryContainer } from "./styles";
+import { HistoryContainer, Status } from "./styles";
 import { HistoryList } from "./styles";
 
 export function History() {
@@ -21,43 +20,57 @@ export function History() {
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
             <tr>
               <td>Tarefa</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses </td>
-              <td>Concluído</td>
+              <td>
+                <Status statusColor="green">Concluído</Status>
+              </td>
             </tr>
           </tbody>
         </table>
