@@ -1,6 +1,9 @@
 import { differenceInSeconds } from "date-fns";
 import { useContext, useEffect, useState } from "react";
-import { CyclesContext } from "..";
+import {
+  CyclesContext,
+  CyclesContextProvider,
+} from "../../../Context/CyclesContext";
 import { CountdownContainer, Separator } from "./styles";
 
 export function Countdown() {
@@ -35,7 +38,13 @@ export function Countdown() {
     return () => {
       clearInterval(interval);
     };
-  }, [activeCycle, totalSeconds, activeCycleId, markCurrentCycleAsFinished]);
+  }, [
+    activeCycle,
+    totalSeconds,
+    activeCycleId,
+    setSecondsPassed,
+    markCurrentCycleAsFinished,
+  ]);
 
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0;
 

@@ -2,8 +2,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFormContext } from "react-hook-form";
 import { FormContainer, MinutsAmountInput, TaskInput } from "./styles";
 import * as zod from "zod";
-import { CyclesContext } from "..";
 import { useContext } from "react";
+import {
+  CyclesContext,
+  CyclesContextProvider,
+} from "../../../Context/CyclesContext";
 
 export function NewCycleForm() {
   const { activeCycle } = useContext(CyclesContext);
